@@ -36,6 +36,5 @@ RUN unzip /tmp/raw2ometiff*.zip -d /opt
 RUN rm -rf /tmp/raw2ometiff*
 RUN ln -s /opt/raw2ometiff*/bin/raw2ometiff /usr/bin/raw2ometiff
 
-
 USER nobody
 ENTRYPOINT ["/opt/convert.sh"]
