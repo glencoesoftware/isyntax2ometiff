@@ -1,6 +1,5 @@
-#!/bin/bash -x
+#!/bin/bash
 
-#get options and build commands
 while getopts ":h:w:r:f:c:i:l" opt
 do
         case "${opt}" in
