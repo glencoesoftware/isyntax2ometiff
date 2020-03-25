@@ -21,6 +21,7 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o /tmp/get-pip.py
 RUN python3 /tmp/get-pip.py
 COPY philips-pathologysdk-*.zip /tmp
 COPY convert.sh /opt
+RUN chmod +x /opt/convert.sh
 RUN unzip /tmp/philips*.zip -d /tmp
 RUN dpkg -i /tmp/philips-pathologysdk-*/pathologysdk-modules/philips-pathologysdk-pixelengine*.deb
 RUN dpkg -i /tmp/philips-pathologysdk-*/pathologysdk-modules/philips-pathologysdk-softwarerenderer*.deb
@@ -36,5 +37,4 @@ RUN unzip /tmp/raw2ometiff*.zip -d /opt
 RUN rm -rf /tmp/raw2ometiff*
 RUN ln -s /opt/raw2ometiff*/bin/raw2ometiff /usr/bin/raw2ometiff
 
-USER nobody
 ENTRYPOINT ["/opt/convert.sh"]

@@ -40,7 +40,6 @@ done
 echo "ISYNTAX OPTS: $ISYNTAX_ARGS"
 echo "RAW OPTS: $RAW_ARGS"
 echo "$FILE"
-
 if [ -f "$FILE" ]; then
   echo "File found, starting conversion"
   isyntax2raw write_tiles $ISYNTAX_ARGS $FILE $FILE.tmp
