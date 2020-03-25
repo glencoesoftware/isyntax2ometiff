@@ -32,9 +32,13 @@ Options
 -i input file
 
 -h tile height in pixels [default: 512]
+
 -w tile width in pixels [default: 512]
+
 -r number of pyramid resolutions to generate [default: all]
+
 -f tile file extension (jpg, png, tiff, n5, zarr) [default: n5]
 
 -c Compression type for output OME-TIFF file (Uncompressed, LZW, JPEG-2000, JPEG-2000 Lossy, JPEG, zlib) [default: LZW]
+
 -l Legacy, writes a Bio_Formats 5.9.x pyramid instead of OME-TIFF
