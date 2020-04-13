@@ -1,7 +1,7 @@
 iSyntax2ometiff docker
 ======================
 
-A docker container for converting Philips iSyntax files into the .ome.tiff format.
+A docker container for converting Philips iSyntax files into the ome.tiff format.
 
 Prerequisites
 =============

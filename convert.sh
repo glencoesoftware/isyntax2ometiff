@@ -37,11 +37,8 @@ do
         RAW_ARGS="$COMP_ARG$LEGACY"
         FILE="$FILE"
 done
-echo "ISYNTAX OPTS: $ISYNTAX_ARGS"
-echo "RAW OPTS: $RAW_ARGS"
-echo "$FILE"
 if [ -f "$FILE" ]; then
-  echo "File found, starting conversion"
+  echo "$FILE found, starting conversion"
   isyntax2raw write_tiles $ISYNTAX_ARGS $FILE $FILE.tmp
   raw2ometiff $RAW_ARGS $FILE.tmp $FILE.ome.tiff
   rm -rf $FILE.tmp
