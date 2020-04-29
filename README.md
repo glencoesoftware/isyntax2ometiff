@@ -39,6 +39,6 @@ Options
 
 -f tile file extension (jpg, png, tiff, n5, zarr) [default: n5]
 
--c Compression type for output OME-TIFF file (Uncompressed, LZW, JPEG-2000, JPEG-2000 Lossy, JPEG, zlib) [default: LZW]
+-c Compression type for output OME-TIFF file (Uncompressed, LZW, JPEG-2000, JPEG-2000-Lossy, JPEG, zlib) [default: LZW]
 
 -l Legacy, writes a Bio_Formats 5.9.x pyramid instead of OME-TIFF
