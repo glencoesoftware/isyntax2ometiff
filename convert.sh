@@ -35,11 +35,9 @@ do
         FILE="$FILE"
 done
 if [ -f "$FILE" ]; then
-  set -x
   echo "$FILE found, starting conversion"
   isyntax2raw write_tiles $ISYNTAX_ARGS $FILE $FILE.tmp
   raw2ometiff $COMPRESSION $LEGACY $RGB $FILE.tmp $FILE.ome.tiff
-  echo "$COMPRESSION"
   rm -rf $FILE.tmp
 else
   echo "$FILE not found, try again"
