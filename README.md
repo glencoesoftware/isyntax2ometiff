@@ -16,14 +16,15 @@ PhilipsSDK - https://www.openpathology.philips.com/
 
 Building the docker
 ===================
-
+```
 docker image build -t isyntax2ometiff .
+```
 
 Converting an iSyntax file
 ==========================
-
+```
 docker run --rm -v /currentworkingdirectory:/gs isyntax2ometiff -i 1.isyntax
-
+```
 Substitue "/currentworkingdirectory" for your working directory - this will map your working directory to the /gs directory within the docker container.
 
 Options
