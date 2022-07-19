@@ -12,7 +12,7 @@ isyntax2raw .whl file - https://github.com/glencoesoftware/isyntax2raw/releases
 
 raw2ometiff .zip file - https://github.com/glencoesoftware/raw2ometiff/releases
 
-PhilipsSDK - https://www.openpathology.philips.com/
+PhilipsSDK - https://www.openpathology.philips.com/ **(CURRENTLY NOT WORKING - contact Philips)**
 
 Building the docker
 ===================
